@@ -7,11 +7,13 @@ import {
 import { BiCategoryAlt, BiChat } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { CiDollar } from "react-icons/ci";
+import AdminDashboard from "../views/admin/AdminDashboard";
 export const allNavs = [
   {
     id: 1,
     title: "dashboard",
     path: "/admin/dashboard",
+    element: <AdminDashboard />,
     icon: <AiOutlineHome />,
     role: "admin",
   },

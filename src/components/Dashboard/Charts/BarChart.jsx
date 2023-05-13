@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Charts from "apexcharts";
+import { useState } from "react";
+import ReactApexChart from "react-apexcharts";
 const BarChart = () => {
   const [state, setState] = useState({
     series: [
       {
-        name: "Net Profit",
+        name: "Sellers",
         data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
       },
       {
@@ -12,7 +12,7 @@ const BarChart = () => {
         data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
       },
       {
-        name: "Free Cash Flow",
+        name: "Orders",
         data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
       },
     ],
@@ -35,6 +35,7 @@ const BarChart = () => {
         show: true,
         width: 2,
         colors: ["transparent"],
+        curve: "smooth",
       },
       xaxis: {
         categories: [
@@ -49,10 +50,9 @@ const BarChart = () => {
           "Oct",
         ],
       },
-      yaxis: {
-        title: {
-          text: "$ (thousands)",
-        },
+
+      legend: {
+        position: "top",
       },
       fill: {
         opacity: 1,
@@ -66,10 +66,14 @@ const BarChart = () => {
       },
     },
   });
-
   return (
     <div className="w-full">
-      <Charts options={state.options} series={state.series} />
+      <ReactApexChart
+        options={state.options}
+        series={state.series}
+        type="bar"
+        height={350}
+      />
     </div>
   );
 };
