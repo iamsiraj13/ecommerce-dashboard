@@ -15,12 +15,6 @@ const Sidebar = ({ show, setShow }) => {
   return (
     <div>
       <div
-        onClick={() => setShow(false)}
-        className={`fixed duration-200 ${
-          show ? "invisible" : "visible"
-        } w-screen h-screen top-0 left-0 z-10`}
-      ></div>
-      <div
         className={`w-[260px] bg-white shadow-md fixed top-0 left-0 h-screen  z-50 transition-all ${
           show ? "left-0" : "-left-[260px] lg:left-0"
         }`}
