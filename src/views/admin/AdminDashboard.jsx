@@ -77,59 +77,91 @@ const AdminDashboard = () => {
       </div>
 
       {/* dashboard chart  */}
-      <div className="w-full flex flex-wrap  gap-4 mt-5  ">
+      <div className=" w-full flex flex-wrap mt-7 ">
         {/* chart  */}
-        <div className="w-full lg:w-6/12 lg:pr-2 bg-white rounded-md shadow-md">
+        <div className="w-full lg:w-7/12 lg:pr-2 bg-white rounded-md shadow-md">
           {" "}
           <BarChart />{" "}
         </div>
-        {/* recent seller message  */}
-        <div className="w-full lg:w-5/12  p-4  bg-white rounded-md shadow-md">
-          <div className="flex justify-between items-center">
-            <h2 className="capitalize">recent seller message</h2>
-            <Link className="capitalize">view all</Link>
-          </div>
-          {/* chat message  */}
-          <div className="flex flex-col pt-5 bg-transparent">
-            <ol className="relative border-1 border-slate-600 ml-6">
-              <li className=" mb-3 ml-6">
-                <div className="absolute -left-5 top-0 flex  w-10 h-10 rounded-full items-center">
-                  <img
-                    src="https://sm.ign.com/ign_ap/cover/a/avatar-gen/avatar-generations_hugw.jpg"
-                    className="w-full h-full object-cover rounded-full"
-                    alt=""
-                  />
-                </div>
-                <div className="p-3 bg-slate-600 rounded-lg border border-slate-600 ">
-                  <div className="flex justify-between items-center mb-2">
-                    <Link className="text-md font-inter capitalize text-white">
-                      admin
-                    </Link>
-                    <p className="font-inter text-white text-sm">1m ago</p>
-                  </div>
-                  <div className="p-2 bg-white rounded-lg">how are you</div>
-                </div>
-              </li>
 
-              <li className=" mb-3 ml-6">
-                <div className="absolute -left-5 top-0 flex  w-10 h-10 rounded-full items-center">
-                  <img
-                    src="https://sm.ign.com/ign_ap/cover/a/avatar-gen/avatar-generations_hugw.jpg"
-                    className="w-full h-full object-cover rounded-full"
-                    alt=""
-                  />
-                </div>
-                <div className="p-3 bg-slate-600 rounded-lg border border-slate-600 ">
-                  <div className="flex justify-between items-center mb-2">
-                    <Link className="text-md font-inter capitalize text-white">
-                      admin
-                    </Link>
-                    <p className="font-inter text-white text-sm">1m ago</p>
+        <div className="w-full lg:w-5/12 lg:pl-4 mt-6 lg:mt-0">
+          <div className="w-full bg-white p-4 rounded-md text-black">
+            <div className="flex justify-between items-center">
+              <h2 className="font-semibold text-lg text-black pb-3">
+                Recent seller message
+              </h2>
+              <Link className="font-semibold text-sm text-black">View All</Link>
+            </div>
+            <div className="flex flex-col gap-2 pt-6 text-[#d0d2d6]">
+              <ol className="relative border-1 border-slate-600 ml-4">
+                <li className="mb-3 ml-6">
+                  <div className="flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-black-l rounded-full z-10">
+                    <img
+                      className="w-full rounded-full h-full shadow-lg"
+                      src="http://localhost:3000/images/admin.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div className="p-2 bg-white rounded-lg">how are you</div>
-                </div>
-              </li>
-            </ol>
+                  <div className="p-3 bg-sky rounded-lg border border-slate-400 shadow-sm">
+                    <div className="flex justify-between items-center mb-2">
+                      <Link className="text-md font-normal text-black-l">
+                        Admin
+                      </Link>
+                      <time className="mb-1 text-sm text-black-l font-normal sm:order-last sm:mb-0">
+                        4 day ago
+                      </time>
+                    </div>
+                    <div className="p-2 text-xs font-normal bg-slate-700 rounded-lg border border-slate-800">
+                      how are you
+                    </div>
+                  </div>
+                </li>
+                <li className="mb-3 ml-6">
+                  <div className="flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-black-l rounded-full z-10">
+                    <img
+                      className="w-full rounded-full h-full shadow-lg"
+                      src="http://localhost:3000/images/admin.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-3 bg-sky rounded-lg border border-slate-400 shadow-sm">
+                    <div className="flex justify-between items-center mb-2">
+                      <Link className="text-md font-normal text-black-l">
+                        Admin
+                      </Link>
+                      <time className="mb-1 text-sm text-black-l font-normal sm:order-last sm:mb-0">
+                        4 day ago
+                      </time>
+                    </div>
+                    <div className="p-2 text-xs font-normal bg-slate-700 rounded-lg border border-slate-800">
+                      how are you
+                    </div>
+                  </div>
+                </li>
+                <li className="mb-3 ml-6">
+                  <div className="flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-black-l rounded-full z-10">
+                    <img
+                      className="w-full rounded-full h-full shadow-lg"
+                      src="http://localhost:3000/images/admin.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-3 bg-sky rounded-lg border border-slate-400 shadow-sm">
+                    <div className="flex justify-between items-center mb-2">
+                      <Link className="text-md font-normal text-black-l">
+                        Admin
+                      </Link>
+                      <time className="mb-1 text-sm text-black-l font-normal sm:order-last sm:mb-0">
+                        4 day ago
+                      </time>
+                    </div>
+                    <div className="p-2 text-xs font-normal bg-slate-700 rounded-lg border border-slate-800">
+                      how are you
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>

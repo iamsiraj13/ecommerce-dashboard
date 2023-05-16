@@ -8,6 +8,7 @@ import { BiCategoryAlt, BiChat } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { CiDollar } from "react-icons/ci";
 import AdminDashboard from "../views/admin/AdminDashboard";
+import Category from "../views/admin/Category";
 export const allNavs = [
   {
     id: 1,
@@ -29,6 +30,7 @@ export const allNavs = [
     title: "category",
     path: "/admin/dashboard/category",
     icon: <BiCategoryAlt />,
+    element: <Category />,
     role: "admin",
   },
   {
@@ -48,7 +50,7 @@ export const allNavs = [
   {
     id: 6,
     title: "deactive seller",
-    path: "/admin/dashboard/payment-request",
+    path: "/admin/dashboard/deactive-seller",
     icon: <AiOutlineExclamationCircle />,
     role: "admin",
   },
