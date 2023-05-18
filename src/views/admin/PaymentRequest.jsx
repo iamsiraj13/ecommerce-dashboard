@@ -15,7 +15,7 @@ const PaymentRequest = () => {
         <div className="w-[25%] p-2 whitespace-nowrap">{index + 1}</div>
         <div className="w-[25%] p-2 whitespace-nowrap">#454</div>
         <div className="w-[25%] p-2 whitespace-nowrap">
-          <span className="py-[1px] px-[5px] bg-slate-700 text-blue-500 rounded-md text-xs">
+          <span className="py-[1px] px-[5px] bg-orange-500 text-white   rounded-md text-xs">
             pending
           </span>
         </div>
@@ -31,11 +31,11 @@ const PaymentRequest = () => {
   return (
     <>
       <div className="px-2 lg:px-7 pt-5">
-        <div className="w-full p-4  bg-[#283046] rounded-md text-[#d0d2d6]">
+        <div className="w-full p-4  bg-white rounded-md text-black">
           <h2 className="text-xl font-medium pb-5">Withdrawal request</h2>
           <div className="w-full">
             <div className="w-full overflow-x-auto">
-              <div className="flex bg-[#161d31] uppercase text-xs min-w-[340px]">
+              <div className="flex bg-sky uppercase text-xs min-w-[340px] font-semibold font-inter">
                 <div className="w-[25%] p-2">No</div>
                 <div className="w-[25%] p-2">Amount</div>
                 <div className="w-[25%] p-2">status</div>

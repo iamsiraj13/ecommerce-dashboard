@@ -10,6 +10,9 @@ import { CiDollar } from "react-icons/ci";
 import AdminDashboard from "../views/admin/AdminDashboard";
 import Category from "../views/admin/Category";
 export const allNavs = [
+  // ==========================================
+  // admin routes
+  // ==========================================
   {
     id: 1,
     title: "dashboard",
@@ -67,5 +70,16 @@ export const allNavs = [
     path: "/admin/dashboard/chat-seller",
     icon: <BiChat />,
     role: "admin",
+  },
+
+  // =============================
+  // * seller routes
+  // =============================
+  {
+    id: 8,
+    title: "Dashboard",
+    path: "/seller/dashboard",
+    icon: <BiChat />,
+    role: "seller",
   },
 ];

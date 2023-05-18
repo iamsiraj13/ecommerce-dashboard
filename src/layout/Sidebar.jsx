@@ -8,7 +8,7 @@ const Sidebar = ({ show, setShow }) => {
   const [allNav, setAllNav] = useState([]);
 
   useEffect(() => {
-    const navs = getNavs("admin");
+    const navs = getNavs("seller");
     setAllNav(navs);
   }, []);
 
@@ -16,14 +16,14 @@ const Sidebar = ({ show, setShow }) => {
     <div>
       <div
         className={`w-[260px] bg-white shadow-md fixed top-0 left-0 h-screen  z-50 transition-all ${
-          show ? "left-0" : "-left-[260px] lg:left-0"
+          show ? "left-0" : "left-[-260px] lg:left-0"
         }`}
       >
         {/*============ sidebar logo ======== */}
         <Link to="/" className="h-[70px] flex justify-center items-center">
           <h3 className="text-black text-lg font-inter font-bold">LOGO</h3>
         </Link>
-        <div className="absolute top-5 right-5">
+        <div className="absolute top-5 right-5 lg:hidden">
           <button onClick={() => setShow(false)} className="text-[20px]">
             <AiOutlineCloseCircle />
           </button>
@@ -36,6 +36,7 @@ const Sidebar = ({ show, setShow }) => {
               <li key={i}>
                 <Link
                   to={n.path}
+                  onClick={() => setShow(false)}
                   className={`${
                     pathname.toString() === n.path
                       ? "capitalize text-black bg-sky-blue flex gap-2 items-center shadow-md rounded px-2 py-1"

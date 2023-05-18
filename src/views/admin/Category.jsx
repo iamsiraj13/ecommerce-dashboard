@@ -41,8 +41,8 @@ const Category = () => {
                 />
               </div>
               <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left text-[#d0d2d6]">
-                  <thead className="text-sm text-[#d0d2d6] uppercase border-b border-slate-700">
+                <table className="w-full text-sm text-left text-black">
+                  <thead className="text-sm text-black uppercase border-b border-slate-700">
                     <tr>
                       <th scope="col" className="py-3 px-4">
                         No
@@ -88,10 +88,10 @@ const Category = () => {
                           className="py-1 px-4 font-medium whitespace-nowrap"
                         >
                           <div className="flex justify-start items-center gap-4">
-                            <Link className="p-[6px] bg-yellow-500 rounded hover:shadow-lg hover:shadow-yellow-500/50">
+                            <Link className="p-[6px] bg-yellow-500 rounded hover:shadow-lg hover:shadow-yellow-500/50 text-white">
                               <FaEdit />
                             </Link>
-                            <Link className="p-[6px] bg-red-500 rounded hover:shadow-lg hover:shadow-red-500/50">
+                            <Link className="p-[6px] bg-red-500 rounded hover:shadow-lg hover:shadow-red-500/50 text-white">
                               <FaTrash />
                             </Link>
                           </div>
@@ -118,9 +118,9 @@ const Category = () => {
             } z-[9999] top-0 transition-all duration-500`}
           >
             <div className="w-full pl-5">
-              <div className="bg-[#283046] h-screen lg:h-auto px-3 py-2 lg:rounded-md text-[#d0d2d6]">
+              <div className="bg-white h-screen lg:h-auto px-3 py-2 lg:rounded-md text-black">
                 <div className="flex justify-between items-center mb-4">
-                  <h1 className="text-[#d0d2d6] font-semibold text-xl">
+                  <h1 className="text-black font-semibold text-xl">
                     Add Category
                   </h1>
                   <div
@@ -134,7 +134,7 @@ const Category = () => {
                   <div className="flex flex-col w-full gap-1 mb-3">
                     <label htmlFor="name">Category name</label>
                     <input
-                      className="px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]"
+                      className="px-4 py-2 focus:border-indigo-500 outline-none bg-sky border border-slate-700 rounded-md text-black"
                       type="text"
                       id="name"
                       name="category_name"
@@ -143,7 +143,7 @@ const Category = () => {
                   </div>
                   <div>
                     <label
-                      className="flex justify-center items-center flex-col h-[238px] cursor-pointer border border-dashed hover:border-indigo-500 w-full border-[#d0d2d6]"
+                      className="flex justify-center items-center flex-col bg-sky h-[238px] cursor-pointer border border-dashed hover:border-indigo-500 w-full border-slate-600"
                       htmlFor="image"
                     >
                       <span>

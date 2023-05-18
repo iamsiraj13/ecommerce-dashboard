@@ -11,25 +11,25 @@ const Sellers = () => {
   return (
     <>
       <div className="px-2 lg:px-7 pt-5">
-        <div className="w-full p-4  bg-[#283046] rounded-md">
+        <div className="w-full p-4  bg-white rounded-md">
           <div className="flex justify-between items-center">
             <select
               onChange={(e) => setParPage(parseInt(e.target.value))}
-              className="px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]"
+              className="px-4 py-2 focus:border-indigo-500 outline-none bg-sky border border-slate-700 rounded-md text-black"
             >
               <option value="5">5</option>
               <option value="5">15</option>
               <option value="5">25</option>
             </select>
             <input
-              className="px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]"
+              className="px-4 py-2 focus:border-indigo-500 outline-none bg-sky border border-slate-700 rounded-md text-black"
               type="text"
               placeholder="search"
             />
           </div>
           <div className="relative overflow-x-auto">
-            <table className="w-full text-sm text-left text-[#d0d2d6]">
-              <thead className="text-xs text-[#d0d2d6] uppercase border-b border-slate-700">
+            <table className="w-full text-sm text-left text-black">
+              <thead className="text-xs text-black uppercase border-b border-slate-700">
                 <tr>
                   <th scope="col" className="py-3 px-4">
                     No
@@ -121,8 +121,8 @@ const Sellers = () => {
                     >
                       <div className="flex justify-start items-center gap-4">
                         <Link
-                          to="/admin/dashboard/seller/details/1"
-                          className="p-[6px] bg-green-500 rounded hover:shadow-lg hover:shadow-green-500/50"
+                          to="/admin/dashboard/seller-details"
+                          className="p-[6px] text-white bg-green-500 rounded hover:shadow-lg hover:shadow-green-500/50"
                         >
                           <FaEye />
                         </Link>
